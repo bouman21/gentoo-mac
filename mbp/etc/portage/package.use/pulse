@@ -1,0 +1,2 @@
+>=media-plugins/alsa-plugins-1.2.2 pulseaudio ffmpeg
+>=media-libs/libcanberra-0.30-r5 pulseaudio

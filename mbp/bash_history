@@ -1,0 +1,500 @@
+cd /usr/src/
+mount /boot/
+cd linux
+make menuconfig
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+grep genkernel ~/.bash_history 
+genkernel --install --lvm --no-ramdisk-modules initramfs
+nano -w /var/log/messages 
+exit
+emerge -av deb2targz
+layman -a
+layman -L
+layman -a brave-overlay
+emerge -av brave-bin
+/etc/init.d/consolekit start
+rc-update add consolekit default
+/etc/init.d/alsasound start
+id gert
+gpasswd -a gert plugdev
+nano -w /etc/pulse/default.pa 
+ls .et
+nano -w /etc/pulse/default.pa 
+nano -w /etc/pulse/client.conf 
+nano -w /etc/pulse/default.pa 
+emerge -av bluez
+/etc/init.d/bluetooth start
+rc-update add bluetooth default
+fuser -v /dev/snd/*
+fuser -v /dev/snd/*
+pavucontrol 
+echo "media-video/mplayer ftp lzo pulseaudio rtmp twolame v4l cddb" >> /etc/portage/package.use/video"
+echo "media-video/mplayer ftp lzo pulseaudio rtmp twolame v4l cddb" >> /etc/portage/package.use/video
+emerge -av mlayer
+emerge -av mplayer
+nano -w /etc/mplayer/mplayer.conf 
+emerge -av ahavi
+emerge -av avahi
+/etc/init.d/avahi-daemon start
+rc-udpate add avahi-daemon default
+cd /var/db/repos/gentoo/dev-qt/
+ls
+emerge -av qtnetwork
+emerge -av teams
+cd /usr/src/linux
+make menuconfig
+dmesg | grep -i apple
+cd /root/
+grep keyboard xorg.conf.new 
+nano xorg.conf.new 
+ls /dev/input/
+emerge -pv xorg-x11
+emerge -pv xorg-server
+dmesg | grep -i keyboard
+cd /etc/X11/
+ls
+ls /usr/share/X11/xorg.conf.d/
+ls /usr/share/X11/xorg.conf.d/10-evdev.conf 
+nano /usr/share/X11/xorg.conf.d/10-evdev.conf 
+nano /usr/share/X11/xorg.conf.d/70-synaptics.conf 
+mkdir /etc/X11/xorg.conf.d
+mv 20-modesetting.conf xorg.conf.d/
+ls-l
+ls -l
+cd xorg.conf.d/
+emerge --ask x11-themes/greybird
+emerge -av etams
+emerge -av teams
+/etc/init.d/alsasound start
+rc-update add alsadound boot
+rc-update add alsasound boot
+/etc/init.d/dbus status
+/etc/init.d/alsasound stop
+rc-update del alsasound boot
+emerge -av  xfce-extra/xfce4-pulseaudio-plugin
+nano -w /etc/portage/package.use/pulse
+nano -w /etc/portage/package.use/pulse
+nano -w /etc/portage/package.use/pulse
+emerge -av  xfce-extra/xfce4-pulseaudio-plugin
+emerge -av media-sound/pavucontrol
+nano -w /etc/portage/package.use/pulse 
+emerge -av media-sound/pavucontrol
+ls /etc/init.d/
+emerge -av xfce-extra/thunar-volman xfce-extra/tumbler xfce-extra/thunar-archive-plugin xfce-extra/xfce4-sensors-plugin x11-themes/xfwm4-themes consolekit
+echo "sys-auth/consolekit evdev cgroups" >> /etc/portage/package.use/consolekit
+emerge -av xfce-extra/thunar-volman xfce-extra/tumbler xfce-extra/thunar-archive-plugin xfce-extra/xfce4-sensors-plugin x11-themes/xfwm4-themes consolekit
+nano -w /etc/asound.conf
+/etc/init.d/alsasound status
+nano -w /etc/asound.conf
+alsamixer 
+cd /usr/src/linux
+make menuconfig
+reboot
+emerge bind-tools
+ip -6 addr
+cd /usr/src/linux
+make menuconfig
+emerge -av broadcom-sta
+echo "net-wireless/broadcom-sta" >> /etc/portage/package.accept_keywords 
+echo "net-wireless/broadcom-sta Broadcom" >> /etc/portage/package.license 
+emerge -av broadcom-sta
+mount /opt/
+mount /boot/
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+emerge -av vlc
+echo "media-video/vlc modplug mtp nfs pulseaudio shout taglib " >> /etc/portage/package.use/video 
+emerge -av vlc
+lspci
+emerge -av acpi
+cd /etc/acpi
+mkdir /etc/acpi
+nano -w /etc/acpi/default.sh
+chmod +x /etc/acpi/default.sh 
+nano -w /etc/X11/xinit/xinitrc.d/00-xhost 
+emerge -av lm_sensors
+emerge -av lm-sensors
+echo "sys-apps/lmsensors sensord" >> /etc/portage/package.use/sensors
+emerge -av lm-sensors
+nano -w /etc/portage/package.use/sensors 
+emerge -av lm-sensors
+/usr/sbin/sensors-detect 
+/etc/init.d/modules restart
+rc-update add sensors default
+/etc/init.d/sensord start 
+rc-update add sensord default
+emerge -a mbpfan
+echo "app-laptop/mbpfan" >> /etc/portage/package.accept_keywords 
+emerge -a mbpfan
+/etc/init.d/mbpfan start
+dmesg
+tail -n 100 /var/log/messages 
+/etc/init.d/consolekit status
+emerge -av xfce-extra/xfce4-pulseaudio-plugin.
+emerge -av xfce-extra/xfce4-pulseaudio-plugin
+emerge -av app-arch/file-roller
+lcpi
+lspci 
+amixer --help
+emerge -av xbindkeys
+cd /etc/X11/xorg.conf.d/
+ls
+ls /usr/share/X11/xorg.conf.d/
+nano -w /usr/share/X11/xorg.conf.d/70-synaptics.conf 
+nano -w 50-synaptics.conf
+ln -s /usr/share/X11/xorg.conf.d/10-evdev.conf 
+ls
+ln -s /usr/share/X11/xorg.conf.d/10-quirks.conf 
+ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf 
+ls -l
+cat 10-evdev.conf 
+ls
+cat 10-quirks.conf 
+env-update && source /etc/profile
+grep grub root/.bash_history 
+ls /boot/
+ls ef
+mount /dev/sdb6 /boot/efi/
+grub-install
+grub-mkconfig
+grub-mkconfig -o /boot/grub/grub.cfg 
+nano -w /boot/grub/grub.cfg 
+grep sdb /boot/grub/grub.cfg 
+ls pci
+lspci
+cd /usr/rli
+cd /usr/src/linux
+grep -i vmware .config
+make menuconfig
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+grep genkernel /root/.bash_history 
+cd ..
+nano mk-genkernel.sh
+chmod +x mk-genkernel.sh 
+./mk-genkernel.sh 
+nano mk-genkernel.sh 
+./mk-genkernel.sh 
+cd /mnt/ge
+nano -w /etc/portage/make.conf 
+/etc/init.d/sshd statys
+/etc/init.d/sshd status
+emerge --changed-use -av world
+cd /var/db/repos/gentoo/x11-drivers/
+ls
+emerge -av xf86-video-vmware mesa
+nano -w /etc/portage/package.use/xfce 
+emerge -av xf86-video-vmware mesa
+emerge --changed-use -av --deep world
+ip -6 addr
+cd /usr/src/linux
+grep CONFIG_VMWARE_VMCI_VSOCKETS .config
+make menuconfig
+lspci | grep -i blue
+lspcq
+lscpu 
+lspci 
+lscpu 
+mount /boot/
+nano -w /etc/fstab 
+fdisk  -l
+mount /boot/
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+cd ../
+ls
+./mk-genkernel.sh 
+gcc-config -L
+emerge -av open-vm-tools
+ls /etc/int.d
+ls /etc/init.d/
+/etc/init.d/vmware-tools start
+rc-update add vmware-tools default
+dmesg
+tail -n 100 /var/log/messages 
+emerge -av tcpdump
+echo "net-analyzer/tcpdump suid" >> /etc/portage/package.use/tcpdump
+emerge -av tcpdump
+tcpdump -i any icmp6
+tcpdump -i any icmp6
+emerge -av mtr
+layman -L
+layman -A pentoo
+layman -a pentoo
+fdisk -l
+emerge -av fsociety
+cd /opt/
+nano -w /etc/dhcpcd.conf 
+/etc/init.d/dhcpcd restart
+ip -6 addr
+ping6 ipb6.google.com
+ping6 ipv6.google.com
+nano -w /etc/rsyncd.conf 
+nano -w /etc/resolv.conf 
+ping 9.9.9.9
+ip -4 addr
+ping 192.168.2.254
+ping 192.168.2.1
+nano -w /etc/resolv.conf 
+ip -4 addr
+ping6 ipv6.google.com
+route -n
+nano -w /etc/sysctl.conf 
+sysctl -P
+sysctl -p
+ping6 ipv6.google.com
+ping 9.9.9.9
+mtr =-i 5 google.com
+ifconfig 
+dmesg
+dmesg
+dmesg
+dmesg
+ifconfig 
+ifconfig -a
+reboot
+dmes
+ifco
+ifconfig 
+lsmod
+lspci 
+emerge -av iwconfig
+cd /usr/src/linux
+grep -i brcmfmac .config
+dmesg | grep -i brmc
+dmesg | grep -i broadcom
+emeerge -av linux-firmware
+emerge -av linux-firmware
+dmesg | less
+emerge -av gentoolkit
+equery -pvq linux-firmware
+equery -NC files linux-firmware
+equery -NC files linux-firmware | grep brcm
+make menuconfig
+emerge linux-firmware
+nano -w /etc/portage/savedconfig/sys-kernel/linux-firmware
+USE="savedconfig" emerge linux-firmware
+nano -w /etc/portage/savedconfig/sys-kernel/linux-firmware
+mount /boot/
+fdisk -l
+nano -w /etc/fstab 
+mount /boot/
+make menucinfig
+make menuconfig
+make && make modules_install
+cd ..
+ls
+./mk-genkernel.sh 
+cd linux
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+nano -w /etc/conf.d/net
+lspco
+lspci | grep -i audio
+make menuconfig
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+../mk-genkernel.sh 
+emerge -av jre
+echo 
+echo "dev-java/icedtea-bin pulseaudio" >> /etc/portage/package.use/java
+emerge -av jre
+emerge -av maltego
+echo "app-forensics/maltego Paterva-EULA" >> /etc/portage/package.license 
+echo "app-forensics/maltego" >> /etc/portage/package.accept_keywords 
+emerge -av maltego
+lspci 
+dmesg | grep BCM43602
+ifconfig -a
+emerge -av franz-im
+ls /var/db/repos/gentoo/net-im/
+emerge -av ruby
+emerge -pv wpscan
+echo "net-analyzer/wpscan" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/cms_scanner" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/get_process_mem" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/opt_parse_validator" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/public_suffix" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/sys-proctable" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/typhoeus" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+echo "dev-ruby/ethon" >> /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+nano -w /etc/portage/package.accept_keywords 
+emerge -pv wpscan
+emerge wpscan
+emerge -av nokogiri
+ls /var/db/repos/gentoo/dev-ruby/nokogiri
+ls /var/lib/layman/pentoo/dev-ruby/nokogiri/
+echo "dev-ruby/nokogiri" >> /etc/portage/package.accept_keywords 
+emerge -av nokogiri
+emerge wpscan
+emerge -av public_suffix
+echo "dev-ruby/public_suffix" >> /etc/portage/package.accept_keywords 
+emerge -av public_suffix
+ls /var/lib/layman/pentoo/dev-ruby/public_suffix
+ls /var/db/repos/gentoo/dev-ruby/public_suffix/
+echo ">=dev-ruvy/public_suffix-4.0" >> /etc/portage/package.mask
+emerge -av public_suffix
+echo ">=dev-ruby/public_suffix-4.0" >> /etc/portage/package.mask
+emerge -av public_suffix
+emerge wpscan
+emerge -av wpscan
+emerge -av --deep wpscan
+emerge -p addressable
+ls /var/db/repos/gentoo/dev-ruby/addressable/
+emerge -av =dev-ruby/addressable-2.7.0
+echo "dev-ruby/addressable" >> /etc/portage/package.accept_keywords 
+emerge -av =dev-ruby/addressable-2.7.0
+nano -w /etc/portage/package.mask 
+rm -R /etc/portage/package.mask 
+mkdir /etc/portage/package.mask
+mkdir /etc/portage/package.unmask
+cd /etc/portage/
+ls -l
+mv package.accept_keywords package.accept_keywords_
+mkdir package.accept_keywords
+mv package.accept_keywords_ package.accept_keywords/default
+emerge -av wordpress
+emerge -av wpscan
+cd /opt/
+git
+git clone https://github.com/roadrunner2/macbook12-spi-driver.git
+cd macbook12-spi-driver/
+git checkout touchbar-driver-hid-driver
+emerge -av dkms
+ls -l
+cd ..
+ls -l
+cd macbook12-spi-driver/
+ls
+echo -e "\n# macbook12-spi-drivers\napplespi\napple_ib_tb\nspi_pxa2xx_platform\nintel_lpss_pci" >> /etc/initramfs-tools/modules
+mkdir /etc/initramfs-tools
+echo -e "\n# macbook12-spi-drivers\napplespi\napple_ib_tb\nspi_pxa2xx_platform\nintel_lpss_pci" >> /etc/initramfs-too
+echo -e "\n# macbook12-spi-drivers\napplespi\napple_ib_tb\nspi_pxa2xx_platform\nintel_lpss_pci" >> /etc/initramfs-tools/modules
+rm /etc/initramfs-too
+layman -a guru
+emerge -av  dkms
+echo "sys-kernel/dkms" >> /etc/portage/package.accept_keywords/dkms
+emerge -av  dkms
+dkms ad .
+dkms add .
+uname -a
+dkms install -m applespi -v 0.1 -k 5.4.48-gentoo
+ls -l /usr/src/
+dkms install -m applespi -v 0.1
+cat /var/lib/dkms/applespi/0.1/build/make.log 
+cd ..
+rm -R macbook12-spi-driver/
+git clone https://github.com/cb22/macbook12-spi-driver.git
+cd macbook12-spi-driver/
+ls -l
+nano -w /etc/initramfs-tools/modules 
+echo -e "\n# applespi\napplespi\nspi_pxa2xx_platform\nintel_lpss_pci" >> /etc/initramfs-tools/modules
+git clone https://github.com/cb22/macbook12-spi-driver.git /usr/src/applespi-0.1
+cd /usr/src/
+ls
+cd applespi-0.1/
+ls
+dkms install -m applespi -v 0.1
+make
+layman -a 
+layman -a 
+layman -a fkmclane
+emerge -av macbook12-spi-driver
+echo "app-laptop/macbook12-spi-driver" >> /etc/portage/package.accept_keywords/apple
+emerge -av macbook12-spi-driver
+cd /usr/src/linux
+mount /boot/
+make menuconfig
+nano .config
+nano .config
+make && make modules_install
+../mk-genkernel.sh 
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+emerge -av macbook12-spi-driver
+make menuconfig
+grep -ir ambient .config
+emerge -pv lm_sensors
+emerge -pv lm-sensors
+echo "sys-apps/lm-sensors contrib" >> /etc/portage/package.use/sensors
+emerge -pv lm-sensors
+ls drivers/iio/light/
+nano drivers/iio/light/Kconfig 
+make menuconfig
+nano drivers/iio/light/Kconfig 
+nano drivers/iio/Kconf
+make menuconfig
+make && make modules_install
+../mk-genkernel.sh 
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+../mk-genkernel.sh 
+iw
+emerge -av iw
+ifconfig 
+iw dev
+emerge -av wpa_supplicant
+nano -w /etc/conf.d/net
+cd /etc/wpa_supplicant/
+ls
+nano wpa_supplicant
+nano wpa_supplicant.conf
+nano -w /etc/conf.d/net
+ifconfig 
+cd /etc/init.d/
+ls
+ln -s net.lo net.enp124s0u1u4
+ln -s net.lo net.wlp2s0
+/etc/init.d/net.wlp2s0 start
+ifconfig 
+dmesg
+/etc/init.d/wpa_supplicant start
+/etc/init.d/wpa_supplicant stop
+/etc/init.d/net.wlp2s0 stop
+/etc/init.d/wpa_supplicant start
+rc-update add dbus default
+/etc/init.d/dbus start
+cd /usr/src/linux
+make menuconfig
+grep -ir rfkill .config
+make && make modules_install
+cp arch/x86_64/boot/bzImage /boot/kernel-5.4.48-gentoo 
+cp System.map /boot/System.map-5.4.48-gentoo 
+cp .config /boot/config-5.4.48-gentoo 
+../mk-genkernel.sh 
+/etc/init.d/net.wlp2s0 stop
+/etc/init.d/wpa_supplicant stop
+/etc/init.d/net.wlp2s0 start
+ifconfig 
+ifconfig 
+dmes
+dmesg\
+dmesg
+ifc
+ifconfig 
+emerge -av darling
+emerge -av apfsprogs
+emerge -av apfs
+emerge -av fuse

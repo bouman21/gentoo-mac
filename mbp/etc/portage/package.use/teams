@@ -1,0 +1,8 @@
+# required by net-im/teams-1.3.00.16851::gentoo
+# required by teams (argument)
+>=media-video/ffmpeg-4.2.3 chromium
+# required by gnome-base/gnome-keyring-3.34.0::gentoo
+# required by app-crypt/libsecret-0.20.3::gentoo
+# required by net-im/teams-1.3.00.16851::gentoo
+# required by teams (argument)
+>=app-crypt/pinentry-1.1.0-r3 gnome-keyring

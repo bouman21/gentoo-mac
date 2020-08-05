@@ -1,0 +1,10 @@
+gnome-base/gvfs archive fuse
+xfce-extra/tumbler curl ffmpeg gstreamer
+media-fonts/corefonts tahoma
+
+# required by x11-drivers/xf86-video-vmware-13.3.0::gentoo
+# required by xf86-video-vmware (argument)
+>=x11-libs/libdrm-2.4.102 libkms
+# required by x11-drivers/xf86-video-vmware-13.3.0::gentoo
+# required by xf86-video-vmware (argument)
+>=media-libs/mesa-20.0.8 xa

@@ -1,0 +1,55 @@
+<repositories encoding="unicode" version="1.0">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>brave-overlay</name>
+    <description>Brave Overlay</description>
+    <homepage>https://gitlab.com/jason.oliveira/brave-overlay</homepage>
+    <owner>
+      <email>jason.oliveira@medicalcannab.is</email>
+      <name>Jason Oliveira</name>
+    </owner>
+    <source type="git">https://gitlab.com/jason.oliveira/brave-overlay.git</source>
+    <feed>https://gitlab.com/jason.oliveira/brave-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>pentoo</name>
+    <description>The overlay contains new or updated security tools.</description>
+    <homepage>http://www.pentoo.ch</homepage>
+    <owner>
+      <email>zerochaos@gentoo.org</email>
+    </owner>
+    <source type="git">https://github.com/pentoo/pentoo-overlay.git</source>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>menelkir</name>
+    <description>Various ebuilds from different sources</description>
+    <homepage>https://gitlab.com/menelkir/gentoo-overlay</homepage>
+    <owner>
+      <email>menelkir@itroll.org</email>
+      <name>Daniel Menelkir</name>
+    </owner>
+    <source type="git">https://gitlab.com/menelkir/gentoo-overlay.git</source>
+    <feed>https://gitlab.com/menelkir/gentoo-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>guru</name>
+    <description>GURU: Ebuild repository entirely maintained by Gentoo users</description>
+    <homepage>https://wiki.gentoo.org/wiki/Project:GURU</homepage>
+    <owner>
+      <email>guru@gentoo.org</email>
+      <name>GURU</name>
+    </owner>
+    <source type="git">https://anongit.gentoo.org/git/repo/proj/guru.git</source>
+    <feed>https://cgit.gentoo.org/repo/proj/guru.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>fkmclane</name>
+    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
+    <homepage>https://github.com/fkmclane/overlay</homepage>
+    <owner>
+      <email>fkmclane@gmail.com</email>
+      <name>Foster McLane</name>
+    </owner>
+    <source type="git">https://github.com/fkmclane/overlay.git</source>
+    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
+  </repo>
+</repositories>

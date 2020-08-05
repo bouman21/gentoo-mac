@@ -1,0 +1,2 @@
+>=sys-libs/zlib-1.2.11-r2 minizip
+media-video/vlc archive cddb fontconfig gstreamer sftp srt twolame upnp v4l x265

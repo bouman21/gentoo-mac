@@ -1,0 +1,3 @@
+net-misc/remmina rdp ssh vnc
+net-misc/freerdp openh264 gstreamer
+net-libs/libvncserver lzo

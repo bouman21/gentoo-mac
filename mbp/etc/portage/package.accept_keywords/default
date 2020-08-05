@@ -1,0 +1,26 @@
+www-client/brave-bin
+net-vpn/protonvpn-cli
+net-vpn/openvpn
+app-editors/atom
+dev-util/electron
+app-eselect/eselect-electron
+net-im/teams
+x11-apps/igt-gpu-tools
+net-wireless/broadcom-sta
+app-laptop/mbpfan
+app-emulation/open-vm-tools
+app-forensics/maltego
+net-analyzer/wpscan
+
+# wpscan
+dev-ruby/cms_scanner
+dev-ruby/get_process_mem
+dev-ruby/opt_parse_validator
+dev-ruby/public_suffix
+dev-ruby/sys-proctable
+dev-ruby/typhoeus
+dev-ruby/ethon
+# end wpscan
+dev-ruby/nokogiri
+dev-ruby/public_suffix
+dev-ruby/addressable

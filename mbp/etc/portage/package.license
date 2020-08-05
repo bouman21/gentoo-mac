@@ -1,0 +1,5 @@
+=sys-kernel/linux-firmware-20200619 linux-fw-redistributable no-source-code
+>=media-fonts/corefonts-1-r7 MSttfEULA
+net-im/teams ms-teams-pre
+net-wireless/broadcom-sta Broadcom
+app-forensics/maltego Paterva-EULA

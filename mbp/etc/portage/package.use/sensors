@@ -1,0 +1,2 @@
+sys-apps/lm-sensors sensord
+sys-apps/lm-sensors contrib

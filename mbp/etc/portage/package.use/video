@@ -1,0 +1,3 @@
+media-video/ffmpeg cdio lib4vl lzma openal openh264 openssl srt ssh twolame v4l webp x265
+media-video/mplayer ftp lzo pulseaudio rtmp twolame v4l cddb
+media-video/vlc modplug mtp nfs pulseaudio shout taglib 

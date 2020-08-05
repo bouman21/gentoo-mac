@@ -1,0 +1,6 @@
+# required by dev-util/electron-7.3.2::atom[system-libvpx]
+# required by electron (argument)
+>=media-libs/libvpx-1.7.0-r1 postproc
+# required by dev-util/electron-7.3.2::atom
+# required by electron (argument)
+>=net-libs/nodejs-14.4.0 inspector
